@@ -1,0 +1,65 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "install",
+      "command": "npm install"
+    },
+    {
+      "name": "setup",
+      "command": "npm run setup --silent"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "npm run start",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build"
+    },
+    "build:profile": {
+      "name": "build:profile",
+      "command": "npm run build:profile"
+    },
+    "serve": {
+      "name": "serve",
+      "command": "npm run serve"
+    },
+    "test": {
+      "name": "test",
+      "command": "npm run test"
+    },
+    "test:coverage": {
+      "name": "test:coverage",
+      "command": "npm run test:coverage"
+    },
+    "test:exercises": {
+      "name": "test:exercises",
+      "command": "npm run test:exercises"
+    },
+    "setup": {
+      "name": "setup",
+      "command": "npm run setup"
+    },
+    "lint": {
+      "name": "lint",
+      "command": "npm run lint"
+    },
+    "format": {
+      "name": "format",
+      "command": "npm run format"
+    },
+    "validate": {
+      "name": "validate",
+      "command": "npm run validate"
+    }
+  }
+}
